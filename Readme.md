@@ -92,9 +92,7 @@ Step 4: Run the App
 
 npm run dev
 
-Then open the link shown in your terminal (e.g., http://localhost:5173).
-
-
+Then open the link shown in your terminal. 
 
 
 🧠 What I Learned
