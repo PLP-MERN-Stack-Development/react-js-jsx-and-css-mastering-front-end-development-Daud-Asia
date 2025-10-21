@@ -2,16 +2,17 @@ import { useState } from 'react';
 import './App.css';
 
 // Import your components here
-// import Button from './components/Button';
-// import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-// import TaskManager from './components/TaskManager';
+import Button from './components/Button';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Layout from './components/Layout';
+import TaskManager from './components/TaskManager';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col">
       {/* Navbar component will go here */}
       <header className="bg-white dark:bg-gray-800 shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -42,9 +43,7 @@ function App() {
               </button>
             </div>
 
-            <p className="text-gray-500 dark:text-gray-400 mt-4">
-              Implement your TaskManager component here
-            </p>
+            <TaskManager />
           </div>
         </div>
         
@@ -69,4 +68,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
